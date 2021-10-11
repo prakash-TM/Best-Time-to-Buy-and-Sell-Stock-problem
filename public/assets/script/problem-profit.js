@@ -1,22 +1,25 @@
 var arr = [7, 1, 5, 3, 6, 4];
 var len = arr.length;
 var new_arr = [];
-for (let i = 0; i < len; i++) {
-    var f_ele = arr[i];
-    var f_ind = arr.indexOf(f_ele) + 1;
-    if (f_ind !== len) {
-        var sli = arr.slice(f_ind, len);
-        var maxi = Math.max.apply(null, sli);
-        var prof = maxi - f_ele;
-        new_arr.push(prof);
-    } else {
-        new_arr.push(0)
+if (arr.length !== 0) {
+    for (let i = 0; i < len; i++) {
+        var f_ele = arr[i];
+        var f_ind = arr.indexOf(f_ele) + 1;
+        if (f_ind !== len) {
+            var sli = arr.slice(f_ind, len);
+            var maxi = Math.max.apply(null, sli);
+            var prof = maxi - f_ele;
+            new_arr.push(prof);
+        } else {
+            new_arr.push(0)
+        }
     }
+
+    var maxi_prof = Math.max.apply(null, new_arr);
+    console.log(maxi_prof);
+} else {
+    console.log("Empty")
 }
-
-var maxi_prof = Math.max.apply(null, new_arr);
-console.log(maxi_prof);
-
 
 
 // solution 2:
