@@ -28,7 +28,7 @@ Explanation: In this case, no transactions are done and the max profit = 0.
 - step2: find the length of the array
 - step3: declare a new new variable as ini (initial value is 0)
 - step4: check if the array length contains more then one values
-- step4: if it is true ,then go for loop for array iteration
+- step5: if it is true ,then go for loop for array iteration
     - step5.1: get the array elements one by one and find the index of the elements
     - step5.2: check if the array element is not the last element of the array
     - step5.3: If not last
