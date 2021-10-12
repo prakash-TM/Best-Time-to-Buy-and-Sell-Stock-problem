@@ -26,17 +26,18 @@ Explanation: In this case, no transactions are done and the max profit = 0.
 
 - step1: get the array element as the variable name is arr
 - step2: find the length of the array
-- step3: declare a new array
-- step4: In for loop iterate the array
-    - step4.1: get the array elements one by one and find the index of the elements
-    - step4.2: check if the array element is not the last element of the array
-    - step4.3: If not last
-        - step4.3.1:  then slice the array elements from index of that array element to till the end of the array
-        - step4.3.2: find the maximum of the sliced elements
-        - step4.3.3: subtract the maximum element and that array element
-        - step4.3.4: push the subtracted value into the new array as named new_arr
-    - step4.4: Is that is last
-        - step4.4.1: push the 0 into the new_arr
-- step5: after loop finished, find the maximum value fo new_arr
-- step6: print that value
+- step3: declare a new new variable as ini (initial value is 0)
+- step4: check if the array length contains more then one values
+- step4: if it is true ,then go for loop for array iteration
+    - step5.1: get the array elements one by one and find the index of the elements
+    - step5.2: check if the array element is not the last element of the array
+    - step5.3: If not last
+        - step5.3.1:  then slice the array elements from index of that array element to till the end of the array
+        - step5.3.2: find the maximum of the sliced elements
+        - step5.3.3: subtract the maximum element and that array element
+        - step5.3.4: check the subtracted value is greater then the ini variable
+        - step5.3.5: if greater then ini value is subtracted vale else go to next iteration
+- step6:after loop finished, print that variable ini value
+- step7:if not then print "Empty"
+
  
