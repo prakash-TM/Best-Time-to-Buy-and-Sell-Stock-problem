@@ -3,7 +3,7 @@ var arr = [7, 1, 5, 3, 6, 4];
 var len = arr.length;
 // var new_arr = [];
 var ini = 0;
-if (arr.length > 1) {
+if (len > 1) {
     for (let i = 0; i < len; i++) {
         // var f_ele = arr[i];
         var f_ind = arr.indexOf(arr[i]) + 1;
